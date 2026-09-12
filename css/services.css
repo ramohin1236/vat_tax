@@ -1,0 +1,208 @@
+/* ====================== Services Section ============= */
+
+.services-section {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+.services-header {
+  margin-bottom: 2.5rem;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0b192c;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.services-subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+/* Flagship Card (Dark Box) */
+.flagship-card {
+  background-color: #0b192c;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.flagship-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fbbf24;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.flagship-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+.flagship-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.flagship-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.flagship-link:hover {
+  opacity: 0.85;
+}
+
+/* Flagship Stats */
+.flagship-stats {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 2.5rem;
+}
+
+.f-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.f-stat-num {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.f-stat-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* Services 3-Column Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Individual Service Card */
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 2rem 1.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.service-icon-box .hero-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(31%) sepia(98%) saturate(1611%) hue-rotate(213deg) brightness(96%) contrast(96%);
+}
+
+.flagship-icon {
+  width: 15px;
+  height: 15px;
+  filter: invert(79%) sepia(55%) saturate(1263%) hue-rotate(344deg) brightness(101%) contrast(97%);
+}
+
+.service-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0b192c;
+  margin-bottom: 0.6rem;
+}
+
+.service-card-desc {
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+/* ============ Responsive Breakpoints ==================================== */
+
+@media (max-width: 992px) {
+  .flagship-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .flagship-stats {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 0;
+    padding-top: 1.5rem;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-section {
+    padding: 3.5rem 0;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .flagship-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}

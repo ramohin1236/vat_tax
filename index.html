@@ -3,36 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Northbridge Advisory - Strategic Financial and Tax Consulting Services.">
-  <title>Northbridge Advisory</title>
+  <meta name="description" content="TaxPoint BD - Professional Income Tax, Monthly VAT Return, and Business Accounting Services in Bangladesh.">
+  <title>TaxPoint BD - Tax &amp; VAT Consultancy in Bangladesh</title>
 
-  <!-- Global Styles & Navbar Styles -->
+  <!-- Global Styles, Navbar, Hero, About & Services Styles -->
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/hero.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/services.css">
 </head>
 <body>
 
-  <!-- ====================== Navigation Bar ============================= -->
+  <!-- ====================== Nav Bar ============================= -->
   <header class="site-header">
     <nav class="navbar" aria-label="Main Navigation">
       
       <!-- Logo -->
-      <a href="#" class="nav-brand" aria-label="Northbridge Advisory Homepage">
-        <span class="brand-badge">NB</span>
-        <span class="brand-name">
-          <span class="brand-bold">Northbridge</span>
-          <span class="brand-light">Advisory</span>
-        </span>
-      </a>
+      <a href="#" class="nav-brand">TaxPoint BD</a>
 
-      <!-- Mobile Hamburger Button -->
+      <!-- Hamburger Button -->
       <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
       </button>
 
-      <!-- Navigation Links & Action Button -->
+      <!-- Nav Links -->
       <div class="nav-menu" id="navMenu">
         <ul class="nav-list">
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -46,12 +43,199 @@
     </nav>
   </header>
 
-  <!-- Demo Content Section (Hero) -->
+  <!-- ====================== Hero Section =============================== -->
   <main>
-    <section class="hero">
+    <section class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <h1 class="hero-title">Reliable Tax, VAT &amp;<br>Accounting Solutions</h1>
+          
+          <p class="hero-description">
+            From annual income tax returns and monthly VAT filings (Mushak 9.1) to RJSC company registration — we handle all your accounts and legal compliances so you can focus on your business.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#get-started" class="btn-primary">
+              Get Started <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="#services" class="btn-secondary">View services</a>
+          </div>
+
+          <div class="hero-divider"></div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Clients served</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">12+ yrs</span>
+              <span class="stat-label">Field experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">NBR compliant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-media">
+          <img src="./images/heroImage.jpg" alt="Tax and VAT accounting services in Bangladesh" class="hero-image">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================== About / Features Section ==================== -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        
+        <!-- Left Content -->
+        <div class="about-content">
+          <h2 class="about-title">A finance function you can<br>hand over with confidence</h2>
+          
+          <p class="about-desc">
+            Founded in 2012, TaxPoint BD supports owner-managed businesses, professional firms, and fast-scaling companies across their full accounting, tax, and compliance obligations. Our team of chartered accountants and tax advisers works as an extension of your leadership — not as a distant vendor.
+          </p>
+
+          <ul class="about-features">
+            <li class="feature-item">
+              <span class="feature-icon">&#10003;</span>
+              <span>Chartered accountants on every engagement — never outsourced back-office teams.</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon">&#10003;</span>
+              <span>Fixed monthly fees agreed up front, with no hourly billing or year-end surprises.</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon">&#10003;</span>
+              <span>One named partner as your point of contact, reachable the same business day.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Image -->
+        <div class="about-media">
+          <img src="./images/finance meeting.jpg" alt="Finance and tax advisory team" class="about-image">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================== Services Section ========================== -->
+    <section class="services-section" id="services">
       <div class="container">
-        <h1>Financial Clarity & Strategic Advisory</h1>
-        <p>Providing expert consulting, tax planning, and strategic financial guidance for modern businesses.</p>
+        
+        <!-- Header -->
+        <div class="services-header">
+          <h2 class="services-title">Our services</h2>
+          <p class="services-subtitle">
+            Engage a single service line or hand over the entire finance function. Every engagement is scoped in writing before work begins.
+          </p>
+        </div>
+
+        <!-- Flagship Card -->
+        <div class="flagship-card">
+          <div class="flagship-content">
+            <div class="flagship-tag">
+             
+              <span>Flagship offering</span>
+            </div>
+            <h3 class="flagship-title">AI-Powered Accounting Services</h3>
+            <p class="flagship-desc">
+              Automated transaction categorisation, anomaly detection, and continuous reconciliation run daily against your ledgers — reviewed and signed off by a chartered accountant before anything reaches your accounts.
+            </p>
+            <a href="#contact" class="flagship-link">
+              Talk to an adviser <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="flagship-stats">
+            <div class="f-stat-item">
+              <span class="f-stat-num">92%</span>
+              <span class="f-stat-label">Entries auto-coded</span>
+            </div>
+            <div class="f-stat-item">
+              <span class="f-stat-num">3 days</span>
+              <span class="f-stat-label">Average month-end close</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Service Cards Grid -->
+        <div class="services-grid">
+          
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/book-open.svg" alt="Accounting" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Accounting &amp; Bookkeeping</h4>
+            <p class="service-card-desc">
+              Accurate day-to-day ledgers, reconciliations, and month-end closes you can rely on.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/calculator.svg" alt="Tax & VAT" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Tax &amp; VAT Services</h4>
+            <p class="service-card-desc">
+              Filings prepared and submitted on time, with planning that keeps liabilities predictable.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/users.svg" alt="Payroll" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Payroll Services</h4>
+            <p class="service-card-desc">
+              End-to-end payroll runs, payslips, and statutory contributions handled every cycle.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/shield-check.svg" alt="Compliance" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Corporate Compliance</h4>
+            <p class="service-card-desc">
+              Company filings, registers, and regulatory deadlines tracked and met on your behalf.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/chart-bar.svg" alt="Reporting" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Financial Reporting</h4>
+            <p class="service-card-desc">
+              Statements and management reports that give directors a clear read on performance.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <img src="https://cdn.jsdelivr.net/npm/heroicons@2.1.3/24/outline/briefcase.svg" alt="Advisory" class="hero-icon">
+            </div>
+            <h4 class="service-card-title">Business Advisory</h4>
+            <p class="service-card-desc">
+              Forecasting, structuring, and funding guidance from a partner who knows your numbers.
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
   </main>
