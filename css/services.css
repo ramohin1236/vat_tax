@@ -1,4 +1,4 @@
-/* ====================== Services Section ============= */
+/* ============= services Section ============= */
 
 .services-section {
   padding: 5rem 0;
@@ -24,7 +24,6 @@
   line-height: 1.6;
 }
 
-/* Flagship Card (Dark Box) */
 .flagship-card {
   background-color: #0b192c;
   color: #ffffff;
@@ -78,7 +77,6 @@
   opacity: 0.85;
 }
 
-/* Flagship Stats */
 .flagship-stats {
   display: flex;
   align-items: center;
@@ -106,14 +104,13 @@
   line-height: 1.4;
 }
 
-/* Services 3-Column Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-/* Individual Service Card */
+
 .service-card {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
@@ -164,7 +161,6 @@
   color: #64748b;
 }
 
-/* ============ Responsive Breakpoints ==================================== */
 
 @media (max-width: 992px) {
   .flagship-card {
