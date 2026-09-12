@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!navToggle || !navMenu) return;
 
-  // Toggle mobile menu on hamburger click
+  // Toggle mobile
   navToggle.addEventListener('click', () => {
     const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', !isExpanded);
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.toggle('active');
   });
 
-  // Close menu when clicking on any nav link or CTA button
+  // Close menu 
   navClickables.forEach(item => {
     item.addEventListener('click', () => {
       navToggle.setAttribute('aria-expanded', 'false');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close menu when clicking outside
+
   document.addEventListener('click', (event) => {
     if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
       navToggle.setAttribute('aria-expanded', 'false');

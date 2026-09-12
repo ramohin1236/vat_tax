@@ -1,9 +1,5 @@
-/* ==========================================================================
-   Navbar Stylesheet (css/navbar.css)
-   Clean, Modern & Fully Responsive
-   ========================================================================== */
+/* ========================== Navbar ========================== */
 
-/* Header Wrapper */
 .site-header {
   position: sticky;
   top: 0;
@@ -15,7 +11,7 @@
   transition: all 0.3s ease;
 }
 
-/* Navbar Flex Container */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -26,7 +22,7 @@
   padding: 0 1.5rem;
 }
 
-/* Brand / Logo (Bold Generic Text) */
+
 .nav-brand {
   font-size: 1.35rem;
   font-weight: 800;
@@ -40,14 +36,12 @@
   opacity: 0.85;
 }
 
-/* Navigation Menu (Links + Button) */
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* Links List */
 .nav-list {
   display: flex;
   align-items: center;
@@ -58,7 +52,7 @@
 }
 
 .nav-link {
-  font-size: 0.95rem; /* ~15px */
+  font-size: 0.95rem;
   font-weight: 500;
   color: #475569;
   text-decoration: none;
@@ -71,7 +65,7 @@
   color: #0b192c;
 }
 
-/* Active or Hover Indicator */
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -87,7 +81,6 @@
   width: 100%;
 }
 
-/* CTA Button ("Get Started") */
 .btn-nav {
   display: inline-flex;
   align-items: center;
@@ -115,7 +108,6 @@
   transform: translateY(0);
 }
 
-/* Hamburger Toggle Button (Hidden on Desktop) */
 .nav-toggle {
   display: none;
   background: transparent;
@@ -138,16 +130,11 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ==========================================================================
-   Mobile & Tablet Responsive Styles (<= 768px)
-   ========================================================================== */
 @media (max-width: 768px) {
-  /* Show Hamburger Button */
   .nav-toggle {
     display: flex;
   }
 
-  /* Hamburger to 'X' animation when active */
   .nav-toggle.active .hamburger-line:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
   }
@@ -160,7 +147,6 @@
     transform: translateY(-7.5px) rotate(-45deg);
   }
 
-  /* Mobile Dropdown Menu */
   .nav-menu {
     position: absolute;
     top: 72px;
@@ -174,7 +160,7 @@
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid #eef2f6;
     
-    /* Animation: slide & fade down */
+    
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;
@@ -182,7 +168,6 @@
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /* When menu is opened */
   .nav-menu.active {
     transform: translateY(0);
     opacity: 1;
@@ -190,7 +175,7 @@
     pointer-events: auto;
   }
 
-  /* Stack nav links */
+
   .nav-list {
     flex-direction: column;
     align-items: flex-start;
@@ -211,10 +196,10 @@
   }
 
   .nav-link::after {
-    display: none; /* remove hover line on mobile for clean look */
+    display: none; 
   }
 
-  /* Full-width CTA button on mobile */
+
   .btn-nav {
     width: 100%;
     padding: 12px;
