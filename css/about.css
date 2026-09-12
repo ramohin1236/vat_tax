@@ -68,7 +68,6 @@
   display: block;
 }
 
-/* ============ Responsive Breakpoints ==================================== */
 
 @media (max-width: 992px) {
   .about-container {
