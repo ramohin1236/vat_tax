@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navClickables = document.querySelectorAll('.nav-link, .btn-nav');
 
   if (!navToggle || !navMenu) return;
 
@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.toggle('active');
   });
 
-  // Close menu when clicking on any nav link
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  // Close menu when clicking on any nav link or CTA button
+  navClickables.forEach(item => {
+    item.addEventListener('click', () => {
       navToggle.setAttribute('aria-expanded', 'false');
       navToggle.classList.remove('active');
       navMenu.classList.remove('active');

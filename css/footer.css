@@ -1,0 +1,77 @@
+/* ====================== Footer Section ============= */
+
+.site-footer {
+  background-color: #0b192c;
+  color: #94a3b8;
+  padding: 1.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Brand Name in Footer */
+.footer-brand {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.footer-brand:hover {
+  opacity: 0.9;
+}
+
+/* Middle Links */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ============ Responsive Breakpoints ==================================== */
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2.25rem 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .footer-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

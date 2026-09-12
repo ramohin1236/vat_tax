@@ -16,6 +16,11 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
